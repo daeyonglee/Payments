@@ -1,16 +1,14 @@
 package com.fastcampuspay.common;
 
 import jakarta.validation.*;
-import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
 
-import java.lang.annotation.*;
 import java.util.Set;
 
 @Component
 public abstract class SelfValidating<T> {
 
-    private Validator validator;
+    private final Validator validator;
 
     public SelfValidating() {
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();

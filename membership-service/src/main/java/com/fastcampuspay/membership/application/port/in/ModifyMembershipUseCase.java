@@ -2,7 +2,7 @@ package com.fastcampuspay.membership.application.port.in;
 
 import com.fastcampuspay.membership.domain.Membership;
 
-public interface RegisterMembershipUseCase {
+public interface ModifyMembershipUseCase {
 
-    Membership registerMembership(RegisterMembershipCommand command);
+    Membership modifyMembership(ModifyMembershipCommand command);
 }

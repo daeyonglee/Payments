@@ -1,7 +1,6 @@
 package com.fastcampuspay.membership.application.port.in;
 
 import com.fastcampuspay.common.SelfValidating;
-import com.fastcampuspay.membership.domain.Membership;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;

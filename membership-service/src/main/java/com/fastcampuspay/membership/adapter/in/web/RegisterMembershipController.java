@@ -6,7 +6,6 @@ import com.fastcampuspay.membership.application.port.in.RegisterMembershipComman
 import com.fastcampuspay.membership.application.port.in.RegisterMembershipUseCase;
 import com.fastcampuspay.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +19,6 @@ public class RegisterMembershipController {
 
     @PostMapping("/membership/register")
     public Membership registerMembership(@RequestBody RegisterMembershipRequest request) {
-        // request -> Command
 
         // use case
         RegisterMembershipCommand command = RegisterMembershipCommand.builder()
